@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <Title>New Post</Title>
+    <link href="https://fonts.googleapis.com/css?family=Georgia: 100,300,400,700|Luckiest+Guy|Georgia:300,400" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Lucida+Sans: 100,300,400,700|Luckiest+Guy|Lucida Grande:300,400" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&subset=greek,cyrillic: 100,300,400,700|Luckiest+Guy|Roboto Mono:300,400" rel="stylesheet" />
+    <link href="style.css" type="text/css" rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="IMG_2095.jpg" />
+    <link href="action_page.html" type="text/html" rel="action" />
+  </head>
+  <body>
+    <div id="header">
+      <div>
+        <h1 style="color: #fff; margin: 0px 0px; padding: 10px 10px;">Lexie's Programming Adventures</h1>
+      </div>
+      <div class="navigation">
+        <div>
+          <a href="index.html" style="margin: 10px 0px 10px 0px; padding: 10px 10px; background-color: rgb(52, 117, 164); box-sizing: border-box; text-decoration: none; color: #fff">Home</a>
+        </div>
+        <br>
+        <br>
+        <div>
+          <a href="about.html" style="margin: 10px 0px 10px 0px; padding: 10px 10px; background-color: rgb(52, 117, 164); box-sizing: border-box; text-decoration: none; color: #fff">About</a>
+        </div>
+        <br>
+        <br>
+        <div>
+          <a href="mailto:alexandrastephens00@gmail.com" style="margin: 10px 0px 10px 0px; padding: 10px 10px; background-color: rgb(52, 117, 164); box-sizing: border-box; text-decoration: none; color: #fff">Contact</a>
+        </div>
+        <br>
+      </div>
+    </div>
+    <table>
+      <tr>
+        <td><?php echo $author-name; ?></td>
+        <td>
+          <script>
+            var postDate = new Date();
+          </script>
+          <?php
+          echo $postDate;
+          ?>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <?php
+          echo $message
+          ?>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
